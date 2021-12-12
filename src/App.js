@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import FunctionalMenu from './components/FunctionalMenu';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Dojo Diner!</h1>
+      <p>Thank you for coming</p>
+      <FunctionalMenu nameOfDish = "pizza" price= "$19.99" numMealsServed = {9}>
+        This pizza is made and imported from Sicily
+      </FunctionalMenu>
+      <FunctionalMenu nameOfDish = "pasta" price= "$24.99" numMealsServed = {7}>
+        Pasta is freshly made in Rome
+      </FunctionalMenu>
+
     </div>
   );
 }
